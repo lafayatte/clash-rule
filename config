@@ -11,7 +11,6 @@ surge_ruleset=Apple,https://github.com/ConnersHua/Profiles/raw/master/Surge/Rule
 surge_ruleset=Microsoft,https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/microsoft.list
 surge_ruleset=PayPal,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/PayPal.list
 surge_ruleset=Telegram,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/Telegram.list
-surge_ruleset=Speedtest,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/Speedtest.list
 surge_ruleset=Proxies,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/Global.list
 surge_ruleset=Domestic,https://github.com/lafayatte/clash-rule/raw/master/china.list
 surge_ruleset=DIRECT,https://github.com/lafayatte/clash-rule/raw/master/LocalAreaNetwork.list
