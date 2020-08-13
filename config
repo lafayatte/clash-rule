@@ -1,0 +1,43 @@
+;规则设置位
+surge_ruleset=DIRECT,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/Unbreak.list
+surge_ruleset=https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/Advertising.list
+surge_ruleset=Hijacking,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/Hijacking.list
+surge_ruleset=Netflix,https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/Media/netflix.list
+surge_ruleset=GlobalMedia,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/GlobalMedia.list
+surge_ruleset=HKMTMedia,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/HKMTMedia.list
+surge_ruleset=DIRECT,https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/ForceDirect.list
+surge_ruleset=Proxies,https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/ForceProxy.list
+surge_ruleset=Apple,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/Apple.list
+surge_ruleset=Microsoft,https://subconverter.oss-ap-southeast-1.aliyuncs.com/Rules/RuleSet/microsoft.list
+surge_ruleset=PayPal,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/PayPal.list
+surge_ruleset=Telegram,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/Telegram.list
+surge_ruleset=Speedtest,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/Speedtest.list
+surge_ruleset=Proxies,https://github.com/ConnersHua/Profiles/raw/master/Surge/Ruleset/Global.list
+surge_ruleset=Domestic,https://github.com/lafayatte/clash-rule/raw/master/china.list
+surge_ruleset=DIRECT,https://github.com/lafayatte/clash-rule/raw/master/LocalAreaNetwork.list
+surge_ruleset=Domestic,[]GEOIP,CN
+surge_ruleset=Final,[]MATCH
+surge_ruleset=Steam,https://github.com/lafayatte/clash-rule/raw/master/steam.list
+
+;-------end ------
+
+;设置分组标志位
+custom_proxy_group=Proxies`select`[]香港🇭🇰`[]新加坡🇸🇬`[]日本🇯🇵`[]美国🇺🇸`[]台湾🇹🇼`[]DIRECT`[]Others
+custom_proxy_group=Domestic`select`[]DIRECT`[]Proxies
+custom_proxy_group=Advertising`select`[]DIRECT`[]REJECT
+custom_proxy_group=Hijacking`select`[]REJECT`[]DIRECT
+custom_proxy_group=Apple`select`[]Domestic`[]Proxies`[]DIRECT
+custom_proxy_group=Telegram`select`[]Proxies`[]香港🇭🇰`[]新加坡🇸🇬`[]US`[]日本🇯🇵`[]台湾🇹🇼`[]美国🇺🇸`[]Others
+custom_proxy_group=Netflix`select`[]Proxies`[]香港🇭🇰`[]新加坡🇸🇬`[]日本🇯🇵`[]台湾🇹🇼`NF|Netflix|NETFLIX|原生|解锁
+custom_proxy_group=HKMTMedia`select`[]Domestic`[]Proxies`[]DIRECT
+custom_proxy_group=GlobalMedia`select`[]Proxies`[]香港🇭🇰`[]新加坡🇸🇬`[]日本🇯🇵`[]美国🇺🇸`[]台湾🇹🇼
+custom_proxy_group=Microsoft`select`[]Proxies`[]Domestic`[]DIRECT
+custom_proxy_group=PayPal`select`[]Proxies`[]DIRECT
+custom_proxy_group=Final`select`[]Proxies`[]Domestic`[]DIRECT
+custom_proxy_group=香港🇭🇰`select`港
+custom_proxy_group=新加坡🇸🇬`select`新加坡|狮城
+custom_proxy_group=台湾🇹🇼`select`台|新北|彰化
+custom_proxy_group=日本🇯🇵`select`日((?!用).)+|东京|大阪|埼玉
+custom_proxy_group=美国🇺🇸`select`美|洛杉矶|硅谷|达拉斯|费利蒙|凤凰城|芝加哥|圣何塞|西雅图
+custom_proxy_group=Others`select`俄罗斯|印度|土耳其|巴西|德国|法国|澳大利亚|英国|菲律宾|韩国
+;----------end--------
