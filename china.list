@@ -4,11 +4,11 @@ DOMAIN-SUFFIX,qhres.com
 DOMAIN-SUFFIX,qhimg.com
 # > Akamai
 DOMAIN-SUFFIX,akadns.net
-DOMAIN-SUFFIX,akamai.net
-DOMAIN-SUFFIX,akamaiedge.net
-DOMAIN-SUFFIX,akamaihd.net
-DOMAIN-SUFFIX,akamaistream.net
-DOMAIN-SUFFIX,akamaized.net
+# DOMAIN-SUFFIX,akamai.net
+# DOMAIN-SUFFIX,akamaiedge.net
+# DOMAIN-SUFFIX,akamaihd.net
+# DOMAIN-SUFFIX,akamaistream.net
+# DOMAIN-SUFFIX,akamaized.net
 # > Alibaba
 USER-AGENT,%E4%BC%98%E9%85%B7*
 DOMAIN-SUFFIX,alibaba.com
@@ -383,7 +383,8 @@ DOMAIN-SUFFIX,zhuihd.com
 DOMAIN,download.jetbrains.com
 DOMAIN,images-cn.ssl-images-amazon.com
 DOMAIN,cdn.angruo.com
-
+DOMAIN,download.epicgames.com
+DOMAIN-KEYWORD,epicgames-download
 # DNSPod Public DNS+
 IP-CIDR,119.28.28.28/32,no-resolve
 IP-CIDR,182.254.116.0/24
