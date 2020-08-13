@@ -18,7 +18,6 @@ surge_ruleset=DIRECT,https://github.com/lafayatte/clash-rule/raw/master/LocalAre
 surge_ruleset=Domestic,[]GEOIP,CN
 surge_ruleset=Final,[]MATCH
 surge_ruleset=Steam,https://github.com/lafayatte/clash-rule/raw/master/steam.list
-
 ;-------end ------
 
 ;设置分组标志位
