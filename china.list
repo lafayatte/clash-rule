@@ -185,6 +185,9 @@ DOMAIN-SUFFIX,whatismyip.com
 # DOMAIN-SUFFIX,speedtest.net
 DOMAIN-SUFFIX,netspeedtestmaster.com
 DOMAIN,speedtest.macpaw.com
+# > uplay
+DOMAIN-SUFFIX,ubisoft.com
+DOMAIN-SUFFIX,ubi.com
 # > Private Tracker
 DOMAIN-SUFFIX,animebytes.tv
 DOMAIN-SUFFIX,awesome-hd.me
