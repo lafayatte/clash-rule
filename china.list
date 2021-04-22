@@ -363,3 +363,6 @@ DOMAIN,images-cn.ssl-images-amazon.com
 DOMAIN-SUFFIX,maxjia.com
 DOMAIN-SUFFIX,cip.cc
 DOMAIN-SUFFIX,wmpvp.com
+#steam 下载
+DOMAIN-SUFFIX,steam.ksyna.com
+DOMAIN-SUFFIX,dl.pinyinyun.com
