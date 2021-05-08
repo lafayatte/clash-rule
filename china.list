@@ -370,3 +370,5 @@ DOMAIN-SUFFIX,steamcontent.tnkjmec.com
 DOMAIN-KEYWORD,cnki
 #直播、影音、社区
 DOMAIN-SUFFIX,edgesrv.com
+
+GEOIP,CN
