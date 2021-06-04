@@ -1,13 +1,13 @@
 - RULE-SET,Reject,AdBlock
 - RULE-SET,Special,DIRECT
-
+- RULE-SET,China PLUS,DIRECT
 - RULE-SET,Netflix,Netflix
-- RULE-SET,Spotify,Spotify
+- RULE-SET,Spotify,GlobalTV
 
 # - RULE-SET,YouTube Music,YouTube
-- RULE-SET,YouTube,YouTube
+- RULE-SET,YouTube,GlobalTV
 
-- RULE-SET,Disney Plus,Disney
+- RULE-SET,Disney Plus,🇺🇸流媒体
 
 - RULE-SET,Bilibili,AsianTV
 - RULE-SET,iQiyi,AsianTV
@@ -30,7 +30,7 @@
 - RULE-SET,encoreTVB,GlobalTV
 - RULE-SET,Fox Now,GlobalTV
 - RULE-SET,Fox+,GlobalTV
-- RULE-SET,HBO,GlobalTV
+- RULE-SET,HBO,🇺🇸流媒体
 - RULE-SET,Hulu Japan,GlobalTV
 - RULE-SET,Hulu,GlobalTV
 - RULE-SET,Japonx,GlobalTV
@@ -47,7 +47,7 @@
 
 - RULE-SET,Telegram,Telegram
 - RULE-SET,Steam,Steam
-- RULE-SET,Speedtest,Speedtest
+- RULE-SET,Speedtest,Proxy
 - RULE-SET,PayPal,PayPal
 - RULE-SET,Microsoft,Microsoft
 
@@ -62,7 +62,7 @@
 
 - RULE-SET,LAN,DIRECT
 - GEOIP,CN,Domestic
-- MATCH,Others
+- MATCH,Others,Final
 
 script:
   code: |
@@ -70,10 +70,11 @@ script:
         port_list = [21, 22, 23, 53, 80, 123, 143, 194, 443, 465, 587, 853, 993, 995, 998, 2052, 2053, 2082, 2083, 2086, 2095, 2096, 5222, 5228, 5229, 5230, 8080, 8443, 8880, 8888, 8889]
         ruleset_action = {"Reject": "AdBlock",
             "Special": "DIRECT",
+            "China PLUS":"DIRECT",
             "Netflix": "Netflix",
-            "Spotify": "Spotify",
-            "YouTube": "YouTube",
-            "Disney Plus": "Disney",
+            "Spotify": "GlobalTV",
+            "YouTube": "GlobalTV",
+            "Disney Plus": "🇺🇸流媒体",
             "Bilibili": "AsianTV",
             "iQiyi": "AsianTV",
             "Letv": "AsianTV",
@@ -93,7 +94,7 @@ script:
             "encoreTVB": "GlobalTV",
             "Fox Now": "GlobalTV",
             "Fox+": "GlobalTV",
-            "HBO": "GlobalTV",
+            "HBO": "🇺🇸流媒体",
             "Hulu Japan": "GlobalTV",
             "Hulu": "GlobalTV",
             "Japonx": "GlobalTV",
@@ -109,7 +110,7 @@ script:
             "ViuTV": "GlobalTV",
             "Telegram": "Telegram",
             "Steam": "Steam",
-            "Speedtest": "Speedtest",
+            "Speedtest": "Proxy",
             "PayPal": "PayPal",
             "Microsoft": "Microsoft",
             "PROXY": "Proxy",
@@ -163,6 +164,12 @@ rule-providers:
   #   url: 'https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/YouTube%20Music.yaml'
   #   path: ./Rules/Media/YouTube_Music
   #   interval: 86400
+  China PLUS:
+    type:http
+    behavior: classical
+    url: 'https://raw.githubusercontent.com/lafayatte/clash-rule/master/china%2B.list'
+    path: ./Rules/Media/China+
+    interval: 86400
   YouTube:
     type: http
     behavior: classical
@@ -388,7 +395,7 @@ rule-providers:
   Steam:
     type: http
     behavior: classical
-    url: 'https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Steam.yaml'
+    url: 'https://raw.githubusercontent.com/lafayatte/clash-rule/master/steam.list'
     path: ./Rules/Steam
     interval: 86400
   Speedtest:
