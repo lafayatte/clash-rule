@@ -1,8 +1,9 @@
-#steam 下载
-DOMAIN-SUFFIX,steam.ksyna.com
-DOMAIN-SUFFIX,dl.pinyuncloud.com
-DOMAIN-SUFFIX,steamcontent.tnkjmec.com
-DOMAIN-KEYWORD,cnki
+payload:
+  #steam 下载
+  - DOMAIN-SUFFIX,steam.ksyna.com
+  -   - DOMAIN-SUFFIX,dl.pinyuncloud.com
+  - DOMAIN-SUFFIX,steamcontent.tnkjmec.com
+  - DOMAIN-KEYWORD,cnki
 #直播、影音、社区
-DOMAIN-SUFFIX,edgesrv.com
-DOMAIN-SUFFIX,embyserver.ga
+  - DOMAIN-SUFFIX,edgesrv.com
+  - DOMAIN-SUFFIX,embyserver.ga
