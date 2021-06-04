@@ -85,6 +85,7 @@ dns:
     geoip: true # 默认
     ipcidr: # 在这个网段内的 IP 地址会被考虑为被污染的 IP
       - 240.0.0.0/4
+rules:
 - RULE-SET,Reject,AdBlock
 - RULE-SET,Special,DIRECT
 - RULE-SET,China PLUS,DIRECT
