@@ -167,7 +167,7 @@ rule-providers:
   China PLUS:
     type:http
     behavior: classical
-    url: 'https://cdn.jsdelivr.net/gh/lafayatte/clash-rule@master/china+.list'
+    url: 'https://cdn.jsdelivr.net/gh/lafayatte/clash-rule@master/china+.yaml'
     path: ./Rules/Media/China+
     interval: 86400
   YouTube:
@@ -395,7 +395,7 @@ rule-providers:
   Steam:
     type: http
     behavior: classical
-    url: 'https://cdn.jsdelivr.net/gh/lafayatte/clash-rule@master/steam.list'
+    url: 'https://cdn.jsdelivr.net/gh/lafayatte/clash-rule@master/steam.yaml'
     path: ./Rules/Steam
     interval: 86400
   Speedtest:
