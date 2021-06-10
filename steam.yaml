@@ -17,6 +17,7 @@ payload:
   - DOMAIN-SUFFIX,steampowered.com.8686c.com
   - DOMAIN-SUFFIX,steamusercontent.com
   - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
+  - DOMAIN-SUFFIX,steamcommunity.com
 # > uplay
   - DOMAIN-SUFFIX,ubisoft.com
   - DOMAIN-SUFFIX,ubi.com
